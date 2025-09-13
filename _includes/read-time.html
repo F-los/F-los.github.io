@@ -1,0 +1,13 @@
+{%- comment -%}
+Chirpy read-time - Jekyll 3.x 호환 버전 (CJK 옵션 인자 제거)
+{%- endcomment -%}
+
+{%- assign _content = include.content | default: content -%}
+{%- assign words = _content | strip_html | number_of_words -%}
+{%- assign wpm = 200 -%}
+{%- comment -%} 올림 처리: (words + wpm - 1) / wpm {%- endcomment -%}
+{%- assign mins = words | plus: wpm | minus: 1 | divided_by: wpm -%}
+
+<span class="read-time">
+  {%- if mins < 1 -%}1 min{%- else -%}{{ mins }} min{%- endif -%} read
+</span>

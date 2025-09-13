@@ -14,8 +14,9 @@ remote_theme: hydecorp/hydejack@v9.1.6
 # 연보라색 테마 설정
 accent_image:
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%)
-accent_color: rgb(102, 126, 234)
-theme_color: rgb(102, 126, 234)
+  overlay: false
+accent_color: '#667eea'
+theme_color: '#667eea'
 
 # 폰트 설정
 font: Noto Sans KR, Helvetica, Arial, sans-serif
@@ -60,6 +61,10 @@ paginate_path: '/page:num/'
 # Hydejack 설정
 hydejack:
   version: 9.1.6
+  # 연보라색 테마 강제 적용
+  accent_color: '#667eea'
+  accent_image:
+    background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)'
   
 # 제외할 파일들
 exclude:

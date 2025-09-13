@@ -1,191 +1,157 @@
 ---
 ---
 
-// Hydejack 테마 사용 시 별도 import 불필요
+@import "my-style";
 
-// 연보라 테마 색상 변수
+// Hydejack 연보라색 테마 커스텀
+// 연보라색 팔레트
 :root {
-  --purple-50: #faf5ff;
-  --purple-100: #f3e8ff;
-  --purple-200: #e9d5ff;
-  --purple-300: #d8b4fe;
-  --purple-400: #c084fc;
-  --purple-500: #a855f7;
-  --purple-600: #9333ea;
-  --purple-700: #7c3aed;
-  --purple-800: #6b21a8;
-  --purple-900: #581c87;
+  --purple-gradient-start: #667eea;
+  --purple-gradient-end: #764ba2;
+  --purple-primary: #667eea;
+  --purple-secondary: #764ba2;
+  --purple-light: #e9d5ff;
+  --purple-dark: #4c1d95;
 }
 
-// 기본 색상 오버라이드
-$brand-color: #a855f7;
-$brand-color-light: #e9d5ff;
-$brand-color-dark: #7c3aed;
+// Hydejack 메인 색상 오버라이드
+.navbar,
+.sidebar {
+  background: linear-gradient(135deg, var(--purple-gradient-start) 0%, var(--purple-gradient-end) 100%) !important;
+}
 
-// 사이트 타이틀 스타일
-.site-title {
-  color: var(--purple-700) !important;
-  font-weight: 600;
-  text-decoration: none !important;
-  
-  &:visited {
-    color: var(--purple-700) !important;
-  }
+// 사이드바 배경
+.sidebar-bg {
+  background: linear-gradient(135deg, var(--purple-gradient-start) 0%, var(--purple-gradient-end) 100%) !important;
+}
+
+// 헤더와 네비게이션
+.navbar-brand,
+.nav-link,
+.sidebar a {
+  color: white !important;
   
   &:hover {
-    color: var(--purple-800) !important;
+    color: #f8fafc !important;
   }
 }
 
-// 네비게이션 링크
-.site-nav .page-link {
-  color: var(--purple-600);
+// 메인 액센트 색상
+.accent,
+.btn-primary,
+a:not(.btn) {
+  color: var(--purple-primary) !important;
   
   &:hover {
-    color: var(--purple-800);
-    text-decoration: none;
-  }
-}
-
-// 헤더 스타일
-.site-header {
-  border-bottom: 2px solid var(--purple-100);
-  background-color: var(--purple-50);
-}
-
-// 포스트 제목
-.post-title, 
-.post-link {
-  color: var(--purple-700) !important;
-  
-  &:hover {
-    color: var(--purple-800) !important;
-    text-decoration: none;
+    color: var(--purple-secondary) !important;
   }
 }
 
 // 버튼 스타일
-.btn, 
-button,
-input[type="submit"] {
-  background-color: var(--purple-600);
-  border: 1px solid var(--purple-600);
-  color: white;
-  padding: 8px 16px;
-  border-radius: 6px;
-  transition: all 0.2s ease;
+.btn-primary {
+  background-color: var(--purple-primary) !important;
+  border-color: var(--purple-primary) !important;
   
   &:hover {
-    background-color: var(--purple-700);
-    border-color: var(--purple-700);
+    background-color: var(--purple-secondary) !important;
+    border-color: var(--purple-secondary) !important;
   }
 }
 
-// 링크 스타일
+// 제목과 헤딩
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  color: var(--purple-secondary) !important;
+}
+
+// 링크 색상
 a {
-  color: var(--purple-600);
+  color: var(--purple-primary) !important;
   
   &:hover {
-    color: var(--purple-800);
-  }
-  
-  &:visited {
-    color: var(--purple-700);
+    color: var(--purple-secondary) !important;
   }
 }
 
 // 코드 블록
-pre, code {
-  border: 1px solid var(--purple-100);
-  background-color: var(--purple-50);
+code,
+pre {
+  background-color: var(--purple-light) !important;
+  border: 1px solid var(--purple-primary) !important;
 }
 
 // 인용구
 blockquote {
-  border-left: 4px solid var(--purple-300);
-  background-color: var(--purple-50);
-  padding: 1rem;
-  margin: 1rem 0;
-  
-  p {
-    margin-bottom: 0;
-  }
+  border-left: 4px solid var(--purple-primary) !important;
+  background-color: var(--purple-light) !important;
 }
 
-// 메타 정보 (날짜 등)
+// 포스트 메타 정보
+.post-date,
 .post-meta {
-  color: var(--purple-600);
+  color: var(--purple-secondary) !important;
 }
 
-// 푸터
-.site-footer {
-  border-top: 2px solid var(--purple-100);
-  background-color: var(--purple-50);
+// 태그
+.tag {
+  background-color: var(--purple-primary) !important;
+  color: white !important;
 }
 
 // 페이지네이션
 .pagination {
   .page-link {
-    color: var(--purple-600);
-    border-color: var(--purple-200);
+    color: var(--purple-primary) !important;
+    border-color: var(--purple-light) !important;
     
     &:hover {
-      background-color: var(--purple-100);
-      border-color: var(--purple-300);
+      background-color: var(--purple-light) !important;
+      color: var(--purple-secondary) !important;
     }
   }
   
   .page-item.active .page-link {
-    background-color: var(--purple-600);
-    border-color: var(--purple-600);
+    background-color: var(--purple-primary) !important;
+    border-color: var(--purple-primary) !important;
   }
 }
 
 // 테이블
 table {
-  border-collapse: collapse;
-  
   th {
-    background-color: var(--purple-100);
-    color: var(--purple-800);
-    border: 1px solid var(--purple-200);
-  }
-  
-  td {
-    border: 1px solid var(--purple-200);
+    background-color: var(--purple-light) !important;
+    color: var(--purple-dark) !important;
   }
   
   tr:nth-child(even) {
-    background-color: var(--purple-50);
+    background-color: rgba(230, 213, 255, 0.3) !important;
   }
 }
 
-// 전체적인 깔끔한 느낌을 위한 추가 스타일
-body {
-  line-height: 1.6;
-  color: #333;
+// 커스텀 스타일 추가
+.lead {
+  color: var(--purple-secondary) !important;
+  font-weight: 500;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  color: var(--purple-700);
-  font-weight: 600;
-}
-
-// 홈페이지 포스트 목록
-.post-list {
-  .post-link {
-    font-size: 1.2rem;
-    font-weight: 500;
-  }
+.post-preview h3 a,
+.post-preview h4 a {
+  color: var(--purple-primary) !important;
+  text-decoration: none;
   
-  .post-meta {
-    font-size: 0.9rem;
+  &:hover {
+    color: var(--purple-secondary) !important;
   }
 }
 
-// 반응형 디자인
-@media screen and (max-width: 600px) {
-  .site-title {
-    font-size: 1.2rem;
-  }
+// 사이드바 내용 (Hydejack 전용)
+.sidebar-sticky {
+  background: rgba(255, 255, 255, 0.1) !important;
+  backdrop-filter: blur(10px) !important;
+}
+
+// 강제 적용을 위한 important 추가
+body {
+  --accent-color: #{var(--purple-primary)} !important;
+  --theme-color: #{var(--purple-primary)} !important;
 }

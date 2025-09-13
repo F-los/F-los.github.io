@@ -1,0 +1,36 @@
+// Hydejack 변수 오버라이드
+$accent-color: #667eea !default;
+$theme-color: #667eea !default;
+
+// 연보라색 그라데이션
+$purple-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+
+// CSS 변수로 색상 정의
+:root {
+  --accent-color: #{$accent-color};
+  --theme-color: #{$theme-color};
+}
+
+// 강제 스타일 적용
+html {
+  --accent-color: #667eea;
+  --theme-color: #667eea;
+}
+
+// Hydejack 특정 클래스들
+.navbar, .sidebar {
+  background: #{$purple-gradient} !important;
+}
+
+.sidebar-bg {
+  background: #{$purple-gradient} !important;
+}
+
+// 모든 링크와 액센트 색상
+a, .accent {
+  color: #667eea !important;
+  
+  &:hover {
+    color: #764ba2 !important;
+  }
+}

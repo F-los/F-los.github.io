@@ -7,7 +7,8 @@
       "WebSearch",
       "Bash(sudo apt:*)",
       "Bash(sudo apt install:*)",
-      "Bash(ruby --version)"
+      "Bash(ruby --version)",
+      "WebFetch(domain:f-los.github.io)"
     ],
     "deny": [],
     "ask": []

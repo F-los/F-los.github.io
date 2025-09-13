@@ -4,12 +4,12 @@
 @import "my-style";
 
 // Hydejack 연보라색 테마 커스텀
-// 연보라색 팔레트
+// 연보라색 팔레트 - 더 진한 색상
 :root {
-  --purple-gradient-start: #667eea;
-  --purple-gradient-end: #764ba2;
-  --purple-primary: #667eea;
-  --purple-secondary: #764ba2;
+  --purple-gradient-start: #9333ea;
+  --purple-gradient-end: #7c3aed;
+  --purple-primary: #9333ea;
+  --purple-secondary: #7c3aed;
   --purple-light: #e9d5ff;
   --purple-dark: #4c1d95;
 }

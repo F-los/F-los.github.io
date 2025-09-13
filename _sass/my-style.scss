@@ -1,9 +1,9 @@
-// Hydejack 변수 오버라이드
-$accent-color: #667eea !default;
-$theme-color: #667eea !default;
+// Hydejack 변수 오버라이드 - 더 진한 연보라색
+$accent-color: #9333ea !default;
+$theme-color: #9333ea !default;
 
 // 연보라색 그라데이션
-$purple-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+$purple-gradient: linear-gradient(135deg, #9333ea 0%, #7c3aed 100%);
 
 // CSS 변수로 색상 정의
 :root {
@@ -13,8 +13,8 @@ $purple-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 
 // 강제 스타일 적용
 html {
-  --accent-color: #667eea;
-  --theme-color: #667eea;
+  --accent-color: #9333ea;
+  --theme-color: #9333ea;
 }
 
 // Hydejack 특정 클래스들
@@ -28,9 +28,9 @@ html {
 
 // 모든 링크와 액센트 색상
 a, .accent {
-  color: #667eea !important;
+  color: #9333ea !important;
   
   &:hover {
-    color: #764ba2 !important;
+    color: #7c3aed !important;
   }
 }

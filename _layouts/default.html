@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+    
+    <style>
+    /* 강력한 연보라색 테마 적용 */
+    :root {
+        --accent-color: #9333ea !important;
+        --theme-color: #9333ea !important;
+        --purple-primary: #9333ea;
+        --purple-secondary: #7c3aed;
+        --purple-light: #e9d5ff;
+    }
+    
+    /* 전체 사이트 색상 오버라이드 */
+    * {
+        --accent-color: #9333ea !important;
+        --theme-color: #9333ea !important;
+    }
+    
+    /* 링크 색상 */
+    a {
+        color: #9333ea !important;
+        text-decoration: none;
+    }
+    
+    a:hover {
+        color: #7c3aed !important;
+        text-decoration: underline;
+    }
+    
+    /* 헤딩 색상 */
+    h1, h2, h3, h4, h5, h6 {
+        color: #7c3aed !important;
+        font-weight: 600;
+    }
+    
+    /* 사이드바 배경 */
+    .sidebar,
+    .navbar {
+        background: linear-gradient(135deg, #9333ea 0%, #7c3aed 100%) !important;
+    }
+    
+    /* 버튼 */
+    .btn-primary,
+    button {
+        background-color: #9333ea !important;
+        border-color: #9333ea !important;
+        color: white !important;
+    }
+    
+    .btn-primary:hover,
+    button:hover {
+        background-color: #7c3aed !important;
+        border-color: #7c3aed !important;
+    }
+    
+    /* 코드 블록 */
+    code {
+        background-color: var(--purple-light) !important;
+        color: #7c3aed !important;
+        padding: 2px 4px;
+        border-radius: 3px;
+    }
+    
+    pre {
+        background-color: var(--purple-light) !important;
+        border: 1px solid #9333ea !important;
+        border-radius: 6px;
+        padding: 1rem;
+    }
+    
+    /* 포스트 메타 */
+    .post-meta {
+        color: #7c3aed !important;
+    }
+    
+    /* 네비게이션 */
+    .site-nav a {
+        color: #9333ea !important;
+    }
+    
+    .site-nav a:hover {
+        color: #7c3aed !important;
+    }
+    </style>
+    
+    {% include head.html %}
+</head>
+<body>
+    <main class="page-content" aria-label="Content">
+        <div class="wrapper">
+            {{ content }}
+        </div>
+    </main>
+</body>
+</html>

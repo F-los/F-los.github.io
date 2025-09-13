@@ -1,41 +1,57 @@
 <style>
-/* 연보라색 테마 강제 적용 */
+/* 더 진한 연보라색 테마 강제 적용 */
 :root {
-  --accent-color: #667eea !important;
-  --theme-color: #667eea !important;
+  --accent-color: #9333ea !important;
+  --theme-color: #9333ea !important;
 }
 
 /* Hydejack 사이드바 */
 .sidebar, .navbar {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  background: linear-gradient(135deg, #9333ea 0%, #7c3aed 100%) !important;
 }
 
 .sidebar-bg {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  background: linear-gradient(135deg, #9333ea 0%, #7c3aed 100%) !important;
 }
 
 /* 모든 링크 */
 a {
-  color: #667eea !important;
+  color: #9333ea !important;
 }
 
 a:hover {
-  color: #764ba2 !important;
+  color: #7c3aed !important;
 }
 
 /* 헤딩 */
 h1, h2, h3, h4, h5, h6 {
-  color: #764ba2 !important;
+  color: #7c3aed !important;
 }
 
 /* 버튼 */
 .btn-primary {
-  background-color: #667eea !important;
-  border-color: #667eea !important;
+  background-color: #9333ea !important;
+  border-color: #9333ea !important;
 }
 
 .btn-primary:hover {
-  background-color: #764ba2 !important;
-  border-color: #764ba2 !important;
+  background-color: #7c3aed !important;
+  border-color: #7c3aed !important;
+}
+
+/* 추가 강제 적용 */
+* {
+  --accent-color: #9333ea !important;
+  --theme-color: #9333ea !important;
+}
+
+.content a,
+.post-content a,
+.markdown-body a {
+  color: #9333ea !important;
+}
+
+.sidebar .nav-link {
+  color: white !important;
 }
 </style>

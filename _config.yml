@@ -9,7 +9,7 @@ lang: ko
 timezone: Asia/Seoul
 
 # Hydejack 테마
-theme: jekyll-theme-hydejack
+remote_theme: hydecorp/hydejack@v9.1.6
 
 # 연보라색 테마 설정
 accent_image:
@@ -39,6 +39,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-paginate
+  - jekyll-remote-theme
 
 # 작성자 정보
 author:

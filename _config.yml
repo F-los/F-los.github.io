@@ -2,17 +2,17 @@
 title: "Taewhei Kim's Blog"
 description: >-
   백엔드 개발자 김태회의 블로그입니다.
-baseurl: ""                 # 루트에서 서비스하면 빈 문자열
+baseurl: ""
 url: "https://f-los.github.io"
 lang: ko
 timezone: Asia/Seoul
 
-# GitHub Pages 원격 테마(Chirpy)
-remote_theme: cotes2020/jekyll-theme-chirpy
+# GitHub Pages 원격 테마(Chirpy) - 일시적으로 비활성화
+# remote_theme: cotes2020/jekyll-theme-chirpy
+theme: minima
 
 # 플러그인
 plugins:
-  - jekyll-remote-theme
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap

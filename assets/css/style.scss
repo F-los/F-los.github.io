@@ -1,0 +1,21 @@
+@import "jekyll-theme-chirpy";
+
+
+:root {
+--accent: #a78bfa; /* 연한 보라색 (Lavender Purple) */
+--accent-dark: #7c3aed; /* 보라색 진한 버전 */
+--accent-light: #ede9fe; /* 보라색 아주 연한 버전 */
+}
+
+
+/* 레이아웃 폭과 타이포 개선 */
+.wrapper { max-width: 900px; }
+.site-title, .site-title:visited { color: var(--accent-dark); }
+.resume-header h1 { margin-bottom: 0; color: var(--accent-dark); }
+.resume-header .subtitle { color: #6b7280; }
+.section { margin: 2rem 0; }
+.section h2 { border-bottom: 2px solid var(--accent-light); padding-bottom: .25rem; margin-bottom: 1rem; color: var(--accent-dark); }
+.badge { display: inline-block; border: 1px solid var(--accent); border-radius: 999px; padding: .2rem .6rem; margin: .15rem; font-size: .85rem; background-color: var(--accent-light); color: var(--accent-dark); }
+.timeline { border-left: 2px solid var(--accent-light); margin-left: .5rem; padding-left: 1rem; }
+.timeline-item { margin: 1rem 0; }
+.timeline-item .when { color: #6b7280; font-size: .9rem; }

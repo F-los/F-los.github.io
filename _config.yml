@@ -1,25 +1,32 @@
-title: Taewhei Kim's Blog
-description: >- 
+# 사이트 기본 정보
+title: "Taewhei Kim's Blog"
+description: >-
   백엔드 개발자 김태회의 블로그입니다.
-baseurl: "" 
-url: "https://f-los.github.io" 
-github_username:  F-los
+baseurl: ""                 # 루트에서 서비스하면 빈 문자열
+url: "https://f-los.github.io"
+lang: ko
+timezone: Asia/Seoul
 
-# Build settings
+# GitHub Pages 원격 테마(Chirpy)
 remote_theme: cotes2020/jekyll-theme-chirpy
 
+# 플러그인
 plugins:
   - jekyll-remote-theme
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
 
+# 작성자 정보
 author:
-name: TaeWhei Kim
-email: xoghl1124@example.com
-github: F-los
-linkedin: your-linkedin
+  name: "TaeWhei Kim"
+  email: "xoghl1124@example.com"
+  github: "F-los"
+  linkedin: "your-linkedin"
 
+# Github 계정(필요 시)
+github_username: "F-los"
 
+# 블로그 페이징
 paginate: 10
 paginate_path: "/blog/page:num/"

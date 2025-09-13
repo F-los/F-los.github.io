@@ -3,7 +3,8 @@
     "allow": [
       "Bash(bundle exec jekyll serve:*)",
       "Bash(bundle install:*)",
-      "Bash(pkill:*)"
+      "Bash(pkill:*)",
+      "WebSearch"
     ],
     "deny": [],
     "ask": []

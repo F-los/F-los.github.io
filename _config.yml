@@ -1,32 +1,74 @@
 # 사이트 기본 정보
-title: "Taewhei Kim's Blog"
+title: "Taewhei Kim"
+tagline: "Backend Developer & Blog"
 description: >-
-  백엔드 개발자 김태회의 블로그입니다.
+  백엔드 개발자 김태회의 이력서 및 개발 블로그입니다.
 baseurl: ""
 url: "https://f-los.github.io"
 lang: ko
 timezone: Asia/Seoul
 
-# GitHub Pages 원격 테마(Chirpy) - 일시적으로 비활성화
-# remote_theme: cotes2020/jekyll-theme-chirpy
-theme: minima
+# Hydejack 테마
+theme: jekyll-theme-hydejack
+
+# 연보라색 테마 설정
+accent_image:
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%)
+accent_color: rgb(102, 126, 234)
+theme_color: rgb(102, 126, 234)
+
+# 폰트 설정
+font: Noto Sans KR, Helvetica, Arial, sans-serif
+font_heading: Noto Sans KR, Helvetica, Arial, sans-serif
+font_code: Fira Code, Menlo, Monaco, Consolas, monospace
+
+# 메뉴 설정
+menu:
+  - title: Home
+    url: /
+  - title: Resume
+    url: /resume/
+  - title: Blog
+    url: /blog/
+  - title: Projects
+    url: /projects/
 
 # 플러그인
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-paginate
 
 # 작성자 정보
 author:
-  name: "TaeWhei Kim"
+  name: "김태회"
   email: "xoghl1124@example.com"
-  github: "F-los"
-  linkedin: "your-linkedin"
+  social:
+    github: F-los
+    linkedin: your-linkedin
 
-# Github 계정(필요 시)
-github_username: "F-los"
+# Github 계정
+github:
+  username: F-los
 
-# 블로그 페이징
-paginate: 10
-paginate_path: "/blog/page:num/"
+# 페이징 설정
+paginate: 5
+paginate_path: '/blog/page-:num/'
+
+# Hydejack 설정
+hydejack:
+  version: 9.1.6
+  
+# 제외할 파일들
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/

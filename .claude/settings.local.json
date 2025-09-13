@@ -4,7 +4,10 @@
       "Bash(bundle exec jekyll serve:*)",
       "Bash(bundle install:*)",
       "Bash(pkill:*)",
-      "WebSearch"
+      "WebSearch",
+      "Bash(sudo apt:*)",
+      "Bash(sudo apt install:*)",
+      "Bash(ruby --version)"
     ],
     "deny": [],
     "ask": []

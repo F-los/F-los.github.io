@@ -1,8 +1,7 @@
 ---
-layout: welcome
+layout: default
 title: 김태회
-sitemap: false
-cover: true
+description: 백엔드 개발자 김태회의 이력서 및 개발 블로그
 ---
 
 안녕하세요! 백엔드 개발자 **김태회**입니다.
@@ -22,4 +21,15 @@ Java Spring Boot를 주력으로 하여 확장 가능하고 안정적인 백엔�
 ---
 
 ## 최근 블로그 포스트
-{:.lead}
+
+{% for post in site.posts limit:3 %}
+  <div class="post-preview">
+    <h4><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h4>
+    <p class="post-meta">{{ post.date | date: "%Y년 %m월 %d일" }}</p>
+    {% if post.description %}
+      <p>{{ post.description | truncatewords: 20 }}</p>
+    {% endif %}
+  </div>
+{% endfor %}
+
+<p><a href="{{ '/blog/' | relative_url }}">더 많은 포스트 보기 →</a></p>

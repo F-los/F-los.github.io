@@ -1,12 +1,7 @@
 ---
-layout: projects
+layout: default
 title: Projects
-description: >
-  개발한 프로젝트들을 소개합니다.
-show_collection: projects
-selected_projects:
-  - exercise-community
-  - marketplace
+description: 개발한 프로젝트들을 소개합니다.
 ---
 
 ## 주요 프로젝트

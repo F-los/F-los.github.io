@@ -1,21 +1,7 @@
 ---
-layout: resume
+layout: default
 title: Resume
-description: >
-  김태회의 이력서입니다.
-hide_description: true
-left_column:
-  - work
-  - volunteer
-  - education
-  - awards
-  - publications
-  - references
-right_column:
-  - languages
-  - skills
-  - interests
-no_groups: true
+description: 김태회의 이력서입니다.
 ---
 
 ## 개인정보

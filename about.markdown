@@ -1,9 +1,7 @@
 ---
-layout: about
+layout: default
 title: About
-description: >
-  백엔드 개발자 김태회에 대해 소개합니다.
-hide_description: true
+description: 백엔드 개발자 김태회에 대해 소개합니다.
 ---
 
 ## 안녕하세요! 👋

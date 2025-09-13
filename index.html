@@ -4,6 +4,39 @@ title: 김태회
 description: 백엔드 개발자 김태회의 이력서 및 개발 블로그
 ---
 
+<style>
+/* 강력한 연보라색 테마 직접 적용 */
+:root {
+  --accent-color: #9333ea !important;
+  --theme-color: #9333ea !important;
+}
+
+* {
+  --accent-color: #9333ea !important;
+  --theme-color: #9333ea !important;
+}
+
+a {
+  color: #9333ea !important;
+}
+
+a:hover {
+  color: #7c3aed !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #7c3aed !important;
+}
+
+.sidebar, .navbar {
+  background: linear-gradient(135deg, #9333ea 0%, #7c3aed 100%) !important;
+}
+
+.post-meta {
+  color: #9333ea !important;
+}
+</style>
+
 안녕하세요! 백엔드 개발자 **김태회**입니다.
 {:.lead}
 
@@ -32,4 +65,4 @@ Java Spring Boot를 주력으로 하여 확장 가능하고 안정적인 백엔�
   </div>
 {% endfor %}
 
-<p><a href="{{ '/blog/' | relative_url }}">더 많은 포스트 보기 →</a></p>
+<p><a href="{{ '/blog/' | relative_url }}">더 많은 포스트 보기 →</a></p><!-- 연보라색 테마 강제 업데이트 -->

@@ -4,6 +4,30 @@ title: Resume
 description: 김태회의 이력서입니다.
 ---
 
+<style>
+/* 연보라색 테마 직접 적용 */
+:root {
+  --accent-color: #9333ea !important;
+  --theme-color: #9333ea !important;
+}
+
+a {
+  color: #9333ea !important;
+}
+
+a:hover {
+  color: #7c3aed !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #7c3aed !important;
+}
+
+.sidebar, .navbar {
+  background: linear-gradient(135deg, #9333ea 0%, #7c3aed 100%) !important;
+}
+</style>
+
 ## 개인정보
 {:.no_toc}
 
